@@ -1,2 +1,12 @@
-# us_kubeflow_examples_dfa
-Data Fabric Kubeflow examples 
+# Setting up the system
+
+### Por Forwarding
+```kubectl port-forward -n istio-system svc/istio-ingressgateway 31380:80```
+
+### Enabling Docker Registry
+```
+cd ../../docker-registry
+docker-compose up
+```
+
+

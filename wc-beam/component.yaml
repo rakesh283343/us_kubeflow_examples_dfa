@@ -1,0 +1,18 @@
+name: Apache Beam - Word Count
+description: Word Count Description Component
+
+inputs:
+- {name: Input Path}
+- {name: Output Path}
+
+outputs:
+- {name: Words Counted, type: Word counts model}
+
+implementation:
+  container:
+    image: examples-word-count:4982eb4d5a8d
+    command: [python, src/wc.py]
+    args: [
+          --input_path, {inputValue: input_path},
+          --output_path, {outputPath: output_path},
+    ]

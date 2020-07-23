@@ -1,0 +1,8 @@
+hello
+hello
+bye
+bye
+alfa
+beta
+gamma
+alfa
